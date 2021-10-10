@@ -19,7 +19,6 @@ resource "aws_instance" "2" {
   tags = {
     Name = replace(local.name, "rtype", "EC2-2")
     Tags = local.common_tags
-
   }
 }
 
