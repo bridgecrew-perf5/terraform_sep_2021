@@ -1,5 +1,5 @@
 module "ec2" {
-    source = "github.com/aKumoSolutions/terraform_sep_2021/modules/ec2"
+    source = "github.com/aKumoSolutions/terraform_sep_2021//modules/ec2?ref=v1"
     ami = "ami-0c2d06d50ce30b442"
     instance_type = "t2.micro"
     env = "dev"
@@ -19,3 +19,9 @@ module "s3" {
 // main/ = branch
 // modules/ = subdirectory
 // ec2/ = subdirectory 
+
+// Tag
+
+// git tag -a v1 -m "version 1"
+// git tag -l
+// git push origin v1
