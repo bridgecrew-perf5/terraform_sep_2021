@@ -29,11 +29,11 @@ variable "instance_type" {
 }
 
 variable "asg_max" {
-  type = number
+  type    = number
   default = 5
 }
 
 variable "asg_desired" {
-  type = number
+  type    = number
   default = 3
 }
